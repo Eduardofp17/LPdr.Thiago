@@ -8,6 +8,7 @@
     --preto:#00061B;
     --azul-escuro:#00061B;
     --cinza-escuro:rgba(7, 21, 66, 0.8);
+    --roxo:#071542;
 }    
     html{
     font-family: 'Roboto', sans-serif;
@@ -119,9 +120,14 @@ nav{
     
 }
 .destaque{
-    color:var(--azul-claro)
-}
+    color:var(--azul-claro);
 
+}
+.textoS2 span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
 .copy1 a{
     background-color: var(--dourado);
     color:var(--preto);
@@ -145,7 +151,7 @@ nav{
 .container2{
     background-color: var(--azul-escuro);
     width:100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: row-reverse;
     color:white;
@@ -179,7 +185,7 @@ nav{
 .leftContai p{
     text-align: left;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 24px;
     color:var(--cinza)
 }
@@ -226,7 +232,7 @@ nav{
 }
 .container3{
     width: 100%;
-    height:500px;
+    height:550px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -259,18 +265,18 @@ nav{
 }
 .cards{
     flex: 1 1 200px;
-    margin:10px;
-    height: 30vh;
+    margin:20px;
+    height: 250px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
-    text-align: center;
-    justify-content: center;
 }
 .card1{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    
+    margin: auto;
+   line-height: 60px;
+   text-align: center;
+   align-content: center;
+   align-items: center;
 }
 .card1Tittle{
     font-weight: 700;
@@ -283,7 +289,7 @@ nav{
 .card1 img{
     width:40px;
     height: 40px;
-    margin: auto;
+    margin-top: 30px;
 }
 .card1Copy{
     font-style: normal;
@@ -291,11 +297,12 @@ nav{
     font-size: 12px;
     line-height: 15px;
     color:var(--cinza-escuro);
-    margin:auto;
+    margin-top: 15px;
 }
 .card2{
     display: flex;
     flex-direction: column;
+    margin:auto;
 }
 .card2Tittle{
     font-weight: 700;
@@ -303,12 +310,15 @@ nav{
     line-height: 22px;
     text-align: center;
     color:var(--azul-escuro);
-    margin:auto;
+    margin: auto;
+    margin-bottom: 15px;
 }
 .card2 img{
-   width: 40px;
-   height: 40px;
-   margin: auto;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+
 }
 .card2Copy{
     font-style: normal;
@@ -316,11 +326,13 @@ nav{
     font-size: 12px;
     line-height: 15px;
     color:var(--cinza-escuro);
-    margin:auto;
+    margin-bottom: 50px;
+  
 }
 .card3{
     display: flex;
     flex-direction: column;
+    margin:auto;
 }
 .card3Tittle{
     font-weight: 700;
@@ -328,7 +340,7 @@ nav{
     line-height: 22px;
     text-align: center;
     color:var(--azul-escuro);
-    margin:auto;
+    margin-bottom: 15px;
 }
 .card3 img{
    width: 40px;
@@ -341,11 +353,12 @@ nav{
     font-size: 12px;
     line-height: 15px;
     color:var(--cinza-escuro);
-    margin:auto;
-}
+    margin-bottom: 63px;
+} 
 .card4{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 .card4Tittle{
     font-weight: 700;
@@ -353,7 +366,7 @@ flex-direction: column;
     line-height: 22px;
     text-align: center;
     color:var(--azul-escuro);
-    margin:auto;
+    margin-bottom: 15px;
 }
 .card4 img{
     width: 30px;
@@ -365,6 +378,268 @@ flex-direction: column;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    color:var(--cinza-escuro);
+    color:var(--cinza-escuro);  
+    margin-bottom: 47px;
+}
+.destaque2{
+    color:var(--azul-escuro)
+}
+.container4{
+    width: 100%;
+    height:550px;
+    display: flex;
+    flex-direction: column;
     margin:auto;
+    background-color: var(--azul-escuro);
+    color:var(--branco);
+    text-align: left;
+}
+.container4Content{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    text-align: center;
+    margin: auto;
+    margin-left: 1px;
+    gap: 15px;
+}
+.aboutWe{
+    margin: auto;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color:var(--azul-claro);
+    margin-bottom: -40px;
+    margin-top: 35px;
+}
+.greenLine2{
+    width: 100%;
+    height: 10px;
+    background-color: var(--dourado);
+    border-radius: 0px 50px 50px 0px;
+    text-align: left;
+}
+.container4Content h1{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 37px;
+    color:var(--azul-claro);
+    text-align: left;
+    
+}
+.OABnumber{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color:var(--cinza);
+    text-align: left;
+}
+.copyContainer4{
+    width:60%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color:var(--branco);
+    margin:auto;
+}
+.info{
+    width: 60%;
+    margin:auto;
+    text-align: left;
+}
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}  
+.imagemS4{
+    width: 40%;
+    height: 80%;
+   background-color: var(--roxo);
+   box-shadow: 0px 2px 0px rgba(105, 201, 255, 0.1);
+    border-radius: 200px 0px 0px 200px;
+    margin: auto;
+    margin-left: 19.7%;
+   justify-content: right;
+   padding-left: 5%;
+}  
+.imagemS4 img{
+   width: 70%;
+    margin: auto;
+}
+
+.ctaPequeno{
+    background-color: var(--dourado);
+    color:var(--preto);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px;
+    border:none;
+    border-radius:50px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    width: 300px;
+    margin: auto;
+}
+.flechaPequena{
+    width: 20px;
+   
+    margin-left: 5px;
+}
+.container5{
+    width:100%;
+    height:550px;
+    background-color:var(--azul);
+    color:var(--branco);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.diferenciais{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+    gap:10px
+}
+.cardsS5{
+    width:500px;
+    height: 200px;
+    background-color: var(--azul-escuro);
+    box-shadow: 0px 4px 16px rgba(0, 6, 27, 0.1);
+    border-radius: 25px;
+    margin: auto;
+    text-align: left;
+}
+.cardsS5 img{
+    width:30px;
+    
+}
+.card1Diferenciais{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:30px;
+}
+.tittle1S5{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--azul-claro)
+}   
+.copy1S5{
+    width:80%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+    color:var(--branco);
+    
+}
+.card2Diferenciais{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+}
+.card2Diferenciais img{
+    margin-left: 8px;
+}
+.tittle2S5{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--azul-claro);
+    margin-left: 8px;
+}   
+.copy2S5{
+    width:80%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+    color:var(--branco);
+    margin-left: 8px;
+}
+.card3Diferenciais{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:10px;
+}
+.card3Diferenciais img{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.tittle3S5{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--azul-claro);
+    margin-left: 15px;
+}   
+.copy3S5{
+    width:90%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color:var(--branco);
+    margin-left: 15px;
+}
+.container5 h2{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color:var(--azul-claro);
+    margin: auto;
+}
+.container6{
+    width:100%;
+    height:550px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--azul-escuro);
+    color:var(--branco);
+    display:flex;
+    flex-direction: column;
+}
+.toWPP{
+    width:80%;
+    height:300px;
+    background-color: var(--roxo);
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.toWPP a{
+    width:400px;
+    margin: auto;
+}
+.container6 h1{
+    color:var(--azul-claro);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin: auto;
+}
+.copy1S6{
+    color:var(--azul-claro);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin: auto;
+    text-align: center;
+}
+.copy2S6{
+    color:var(--branco);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
