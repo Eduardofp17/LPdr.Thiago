@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
     <title>Dr. Thiago adv</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="everything">
         <header>
-            <div class="logo">
-                <img src="./assets/images/logoThiago.png" alt="Logo Thiago Holanda adv">
-            </div>
-            <nav>
-                <ul class="atalhos">
-                    <li>Início</li>
-                    <li>O que é BPC?</li>
-                    <li>Nosso papel</li>
-                    <li>Sobre</li>
-                    <li>Diferencial</li>
-                </ul>
+            <nav class="cabecalho">
+                <div class="logo">
+                    <img src="./assets/images/logoThiago.png" alt="Logo Thiago Holanda adv">
+                </div>
+
+                    <ul class="atalhos">
+                        <li> <a href="#home" class="ini iniS">Início</a></li>
+                        <li> <a href="#knowledge" class="conhe ">O que é BPC?</a></li>
+                        <li> <a href="#skills" class="respon ">Nosso papel</a> </li>
+                        <li> <a href="#about" class="we ">Sobre</a> </li>
+                        <li> <a href="#diferencas" class="qualidades ">Diferencial</a> </li>
+                    </ul>
+                    <a class="contactMe"href="#contato">Entrar em contato</a>
+
             </nav>
-                <a href="">Entrar em contato</a>
         </header>
 
         <main>
-            <section class="container1">
+            <section id="home" class="container1">
                 <div class="copy1">
                     <div class="tittle">
                         <h1>Precisa de um Previdenciarista <span class="destaque"> Especialista em BPC</span> online?</h1>
@@ -35,17 +41,17 @@
                     <div class="texts">
                         <p>Um previdenciarista especialista em BPC/LOAS pode ajudá- <br> lo(a) a receber um benefício do INSS no valor de <br> <span class="destaque"> R$ 1.212,00 por mês.</span></p>
                     </div>
-                    <a href="" class="cta">Quero ajuda de um especicalista <img class="flecha" src="./assets/images/flecha.png" alt="Ícone de flecha"></a>
+                    <a href="" class="cta">Quero ajuda de um especialista <img class="flecha" src="./assets/images/flecha.png" alt="Ícone de flecha"></a>
                 </div>
                 <div class="ThiagoImage1">
                      <img class="ThiagoSuit" src="./assets/images/ThiagoTerno.png" alt="Dr. Thiago Holanda">
               </div>
             </section>
-            <section class="container2">
+            <section id="knowledge" class="container2">
                 <div class="rightContai">
                     <div class="greenLine"></div>
                     <h1>Nosso escritório é <br> especialista em ajudar pessoas <br> a conquistar seu Benefício de <br> Prestação Continuada</h1>
-                    <a href="" class="cta">Quero ajuda de um especicalista <img src="./assets/images/flecha.png" alt="Ícone de flecha" class="flecha"></a>
+                    <a href="" class="cta">Quero ajuda de um especialista <img src="./assets/images/flecha.png" alt="Ícone de flecha" class="flecha"></a>
                 </div>
                 <div class="leftContai">
                     <h2> O que é BPC/LOAS? </h2>
@@ -55,7 +61,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container3">
+            <section id="skills" class="container3">
                 <div class="textS3">
                     <h3>O que vamos fazer por você:</h3>
                 </div>
@@ -84,7 +90,7 @@
                 </div>
              </section> 
                 
-            <section class="container4">
+            <section  id="about"class="container4">
                 <h1 class="aboutWe">Sobre nós</h1>
 
                 <div class="conteudo">
@@ -98,14 +104,14 @@
                         <p class="copyContainer4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos ratione excepturi rerum illo voluptatem non tenetur, maxime itaque laudantium delectus ipsum, aut possimus sint libero aperiam dicta quasi explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos ratione excepturi rerum illo voluptatem non tenetur, maxime itaque laudantium delectus ipsum, aut possimus sint libero aperiam dicta quasi explicabo!
                         </p>
-                        <a href="" class="ctaPequeno">Quero ajuda de um especicalista <img class="flechaPequena" src="./assets/images/flecha.png" alt="Ícone de flecha"></a>
+                        <a href="" class="ctaPequeno">Quero ajuda de um especialista <img class="flechaPequena" src="./assets/images/flecha.png" alt="Ícone de flecha"></a>
                     </div>
                     <div class="imagemS4">
                         <img src="./assets/images/thiagoCadeira.png" alt="Dr. Thiago sentado em uma cadeira">
                     </div>
                 </div>
             </section>
-            <section class="container5">
+            <section id="diferencas" class="container5">
                 <h2>Nosso diferencial</h2>
                 <div class="diferenciais">
                    <div class="card1Diferenciais cardsS5">
@@ -125,7 +131,7 @@
                    </div>
                 </div>
             </section>
-            <section class="container6">
+            <section id="contato" class="container6">
                 <h1>Entrar em contato</h1>
                 <div class="toWPP">
                     <h2 class="copy1S6">Mande uma mensagem no Whatsapp!</h2>
@@ -139,5 +145,7 @@
 
         </footer>
     </div>
+    <script src="./assets/javascript/main.js"></script>
 </body>
+
 </html>
