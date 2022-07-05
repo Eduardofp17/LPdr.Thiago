@@ -13,7 +13,6 @@
     html{
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-   
 }
 .everything{
     width:100%;
@@ -25,7 +24,7 @@
 }
 .cabecalho{
     width: 100%;
-    height:10%;
+    height:10px;
     background-color: var(--azul);
     display: flex;
     flex-direction: row;
@@ -87,8 +86,8 @@
     margin:auto;
 }
 .logo-new{
-    width:100px;
-    height: 45px;
+    width:160px;
+    height: 80px;
     margin:auto;
 }
 .contactMe{
@@ -110,14 +109,14 @@
 }
 .contactMe-new{
     margin:auto;
+    color:var(--azul);
     background-color: var(--dourado);
-    color:var(--preto);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 19px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: 1px solid var(--dourado);
     border-radius: 50px;
     justify-content: flex-end;
@@ -130,22 +129,41 @@
 .iniS{
     color: var(--dourado);
     border-bottom: 1px solid var(--dourado);
+    font-size: 13px;
 }
 .knowS{
     color: var(--dourado);
     border-bottom: 1px solid var(--dourado);
+    font-size: 13px;
 }
 .skillSec{
     color: var(--dourado);
     border-bottom: 1px solid var(--dourado);
+    font-size: 13px;
 }
 .sobreSec{
     color: var(--dourado);
     border-bottom: 1px solid var(--dourado);
+    font-size: 13px;
 }
 .diferencasSec{
     color: var(--dourado);
     border-bottom: 1px solid var(--dourado);
+    font-size: 13px;
+}
+.contactSec{
+    margin:auto;
+    color:var(--dourado);
+    background-color: var(--azul);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 20px;
+    border: 1px solid var(--dourado);
+    border-radius: 50px;
+    justify-content: flex-end;
 }
 nav{
     margin:auto;
@@ -303,11 +321,11 @@ nav{
 }
 .cta-new{
     color: var(--dourado);
-    background-color:var(--preto);
+    background-color:var(--azul);
     display: flex;
     flex-direction: row;
     padding: 20px;
-    border:none;
+    border:1px solid var(--dourado);
     border-radius:50px;
     font-weight: 700;
     font-size: 20px;
