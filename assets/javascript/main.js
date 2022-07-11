@@ -12,16 +12,20 @@ let alturaContato = document.getElementById("contato").offsetTop -400;
 
 window.addEventListener("scroll", ()=>{
 //    primeira açao
-    const cabecalho = this.document.querySelector(".cabecalho");
-    const logo = this.document.querySelector(".logo");
-    const atalhos = this.document.querySelector(".atalhos");
-    const contact = this.document.querySelector(".contactMe");
+    const cabecalho = this.document.querySelector(".class-header");
+  
+    const contact = this.document.querySelector(".nav-button");
     const callToAction = this.document.querySelector(".cta");
+    const flecha=this.document.querySelector('#changeRow')
 
-    cabecalho.classList.toggle("novo-cabecalho", this.window.scrollY > 100);
-    logo.classList.toggle("logo-new", this.window.scrollY > 100);
+    cabecalho.classList.toggle("class-header-new", this.window.scrollY > 100);
     callToAction.classList.toggle("cta-new", this.window.scrollY > 100)
-    contact.classList.toggle("contactMe-new", window.scrollY > 100)
+    if(window.scrollY >100){
+        flecha.setAttribute('src','./assets/images/new-flecha.png')
+    }else{
+        flecha.setAttribute('src','./assets/images/flecha.png')
+    }
+    contact.classList.toggle("nav-button-new", window.scrollY > 100)
 
     // acessibilidade
     const ini = document.querySelector('.ini');
