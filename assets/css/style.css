@@ -701,6 +701,7 @@
 .card1Diferenciais{
     display: flex;
     flex-direction: column;
+    height: auto;
     gap:10px;
     padding:30px;
 }
@@ -724,6 +725,7 @@
     flex-direction: column;
     gap:10px;
     padding:20px;
+    height: auto;
 }
 .card2Diferenciais img{
     margin-left: 8px;
@@ -749,6 +751,7 @@
     flex-direction: column;
     gap:10px;
     padding:10px;
+    height: auto;
 }
 .card3Diferenciais img{
     margin-top: 15px;
@@ -821,6 +824,14 @@
     line-height: 22px;
 }
 @media (max-width:1100px){
+    header{
+        display: flex;
+        flex-direction: row;
+        gap:80%;
+    }
+    .logo{
+        margin-left:-50%;
+    }
     .menu {
        display: flex;
        flex-direction: column;
@@ -854,6 +865,14 @@
     }
 }
 @media (max-width:750px){
+    header{
+        display: flex;
+        flex-direction: row;
+        gap:70%;
+    }
+    .logo{
+        margin-left:-60%;
+    }
     .tittle h1{
         font-size: 21px;
     }
@@ -879,11 +898,18 @@
 @media(max-width:600px){
     /* header */
     header{
-        
+        display: flex;
+        flex-direction: row;
+        gap:50%;
     }
     .logo{
-        margin-left: -60px;
+        margin-left:-70%;
     }
+    .class-header-new{
+        padding: 7px 150px; 
+    
+    }
+    /* container 1 */
     .container1{
         width: 100%;
         height:auto;
@@ -892,13 +918,15 @@
         margin: auto;
         padding: 50px;
     }
-    /* container 1 */
 
     .ThiagoImage1{
         margin-top: 50px;
     }
     .ThiagoSuit{
         width:240px;
+    }
+    .tittle{
+        width:100%;
     }
     .tittle h1{
         font-size: 25px;
@@ -934,6 +962,7 @@
         display: flex;
         flex-direction: column-reverse;
         padding:50px;
+        gap:40px;
     }
     /* container2 */
     .leftContai h2{
@@ -943,40 +972,116 @@
     .textoS2{
         background: none;
         border: none;
+        box-shadow: none;
         width:100%;
         box-shadow: 0px;
         padding:0px;
+        text-align: center;
     }
     .textoS2 p{
-        
+        text-align: center;
         font-size:12px;
     }
     .textoS2 p span{
         
         font-size:14px;
     }
+    .greenLine{
+        display:none;
+    }
+    .rightContai h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    /* container3 */
     .container3{
         width: 100%;
         height:auto;
         display: flex;
         flex-direction: column;
+        gap:30px;
     }
+    .competencias{
+        gap:20px;
+    }
+    .cards:hover{
+        width:220px;
+        transition: 800ms;
+        padding: 30px;
+    }
+
+    /* container4 */
     .container4{
         width: 100%;
         height:auto;
         display: flex;
+        margin:auto;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        gap:30px;
+    }
+    .conteudo{
+        width: 100%;
+        margin: auto;
+    }
+    .info h1{
+        font-size: 17px;
+    }
+    .info p{
+        font-size: 13px;
+    }
+    .aboutWe{
+        margin-bottom: 20px;
+    }
+    .imagemS4{
+        display: none;
+        background:none;
+        box-shadow: none;
+    }
+    .container4Content{
+        display: flex;
         flex-direction: column;
     }
+    .ctaPequeno{
+        width:230px;
+        padding:5px;
+        font-size: 10px;
+    }
+    .greenLine2{
+        display:none;
+    }
+    /* container5 */
     .container5{
         width: 100%;
         height:auto;
         display: flex;
         flex-direction: column;
+        padding: 10px 10px;
+        gap:30px;
     }
+    .diferenciais{
+        gap:20px;
+    }
+
+    /* container6 */
     .container6{
         width: 100%;
         height:auto;
         display: flex;
         flex-direction: column;
+        padding:50px;
+        gap:20px;
+    }
+    .toWPP h2{
+        font-size: 14px;
+    }
+    .toWPP p{
+        font-size: 12px;
+    }
+    .toWPP a{
+        width:230px;
+        padding:5px;
+        font-size: 10px;
     }
 }
