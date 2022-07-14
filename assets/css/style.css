@@ -897,18 +897,12 @@
 }
 @media(max-width:600px){
     /* header */
-    header{
-        display: flex;
-        flex-direction: row;
-        gap:50%;
-    }
-    .logo{
-        margin-left:-70%;
-    }
+   
     .class-header-new{
         padding: 7px 150px; 
     
     }
+    
     /* container 1 */
     .container1{
         width: 100%;
@@ -918,7 +912,10 @@
         margin: auto;
         padding: 50px;
     }
-
+    .copy1{
+        max-width: 100%;
+        text-align: center;
+    }
     .ThiagoImage1{
         margin-top: 50px;
     }
@@ -930,9 +927,12 @@
     }
     .tittle h1{
         font-size: 25px;
+        text-align: center;
     }
     .texts{
         font-size: 13px;
+        text-align: center;
+        align-items: center;
     }
     .cta{
         padding: 5px;
@@ -942,7 +942,13 @@
         font-size: 10px;
         line-height: 27px;
         width: 230px;
-    }
+        margin: auto;
+        align-items: center;
+        text-align: center; 
+     }
+     .copy1 a{
+        margin:auto;
+     }
     .flecha{
         width:15px;
     }
@@ -954,8 +960,12 @@
         font-size: 10px;
         line-height: 27px;
         width: 230px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
     }
-
+    
+    /* container2 */
     .container2{
         width: 100%;
         height:auto;
@@ -964,7 +974,6 @@
         padding:50px;
         gap:40px;
     }
-    /* container2 */
     .leftContai h2{
         font-size: 23px;
         border: none;
@@ -973,10 +982,12 @@
         background: none;
         border: none;
         box-shadow: none;
-        width:100%;
+        width:80%;
         box-shadow: 0px;
         padding:0px;
         text-align: center;
+        font-size: 11px;
+        margin: auto;
     }
     .textoS2 p{
         text-align: center;
@@ -993,13 +1004,25 @@
         text-align: center;
         font-size: 25px;
     }
+    .leftContai{
+        width:100%;
+        text-align: center;
+    }
+    .rightContai{
+        width:100%;
+        font-size: 15px;
+    }
+    .rightContai h1{
+        width: 100%;
+        font-size: 18px;
+    }
     /* container3 */
     .container3{
         width: 100%;
         height:auto;
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap:40px;
     }
     .competencias{
         gap:20px;
@@ -1009,7 +1032,6 @@
         transition: 800ms;
         padding: 30px;
     }
-
     /* container4 */
     .container4{
         width: 100%;
@@ -1025,6 +1047,29 @@
         width: 100%;
         margin: auto;
     }
+    .info{
+        width:100%;
+        margin:auto;
+        text-align: center;
+    }
+    .container4Content{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+        margin: auto;
+       
+        gap: 15px;
+    }
+    .copyContainer4{
+        width:100%;
+        text-align: left;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color:var(--branco);
+        margin:auto;
+    }
     .info h1{
         font-size: 17px;
     }
@@ -1032,8 +1077,13 @@
         font-size: 13px;
     }
     .aboutWe{
-        margin-bottom: 20px;
-    }
+       margin: auto;
+       font-weight: 700;
+       font-size: 25px;
+       line-height: 30px;
+        color:var(--azul-claro);
+      
+}
     .imagemS4{
         display: none;
         background:none;
@@ -1050,6 +1100,9 @@
     }
     .greenLine2{
         display:none;
+    }
+    .copyContainer4{
+        font-size: 12px;
     }
     /* container5 */
     .container5{
@@ -1073,15 +1126,285 @@
         padding:50px;
         gap:20px;
     }
+    .toWPP{
+        padding: 20px;
+    }
     .toWPP h2{
         font-size: 14px;
     }
     .toWPP p{
         font-size: 12px;
     }
-    .toWPP a{
-        width:230px;
-        padding:5px;
+  .toWPP a{
+         width:270px;
+         padding: 05px;
+         font-size: 10px;
+         margin: auto;
+      }
+    
+}
+@media(max-width:550px){
+    /* header */
+  
+   .class-header-new{
+       padding: 7px 150px; 
+    
+   }
+   .menu{
+        
+         margin-left: -20px;
+    }
+   /* container 1 */
+   .copy1{
+    max-width: 100%;
+   }
+   .logo{
+    margin:auto;
+    margin-left: -60%;
+   }
+}
+
+@media(max-width:480px){
+     /* header */
+    
+    .class-header-new{
+        padding: 7px 150px; 
+    
+    }
+    .menu{
+        margin:0;
+    }
+    .logo{
+        margin-left: -80%;
+    }
+    /* container1 */
+    .tittle h1{
+        width: 60%;
+        font-size: 13px;
+    }
+    .texts{
+        font-size: 11px;
+    }
+    .ThiagoSuit{
+        width: 180px;
+    }
+
+    /* container 2 */
+    .leftContai h2{
+        font-size: 18px;
+    }
+    .textoS2 p{
+        width:70%;
         font-size: 10px;
+        margin: auto;
+    }
+    .textoS2 p span{
+        font-size: 12px;
+    }
+    .rightContai h1{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    /* container3 */
+    .textS3 h3{
+        font-size: 18px;
+    }
+    .cards{
+        width:160px;
+       
+        height: 250px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        padding: 20px;
+        font-size: 12px;
+    }
+    /* container 4 */
+    .info{
+        margin:auto;
+    }
+    .info h1{
+        font-size: 15px;
+    }
+    .copyContainer4{
+        font-size: 12px;
+    }
+    /* container 5 */
+
+    
+    /* container 6 */
+    .toWPP{
+        width:90%;
+        padding: 20px;
+        align-items: center;
+    }
+    .toWPP h2{
+        font-size: 12px;
+    }
+    .toWPP p{
+        font-size: 10px;
+    }
+    .toWPP a{
+        width:270px;
+        padding: 05px;
+        font-size: 10px;
+        margin: auto;
+    }
+    .flechaPequena{
+        width:15px;
+    }
+}
+@media(max-width:450px){
+    /* header */
+    .menu{
+        margin: 0;
+    }
+   .logo{
+       margin-left: -90%;
+       width:150px;
+   }
+   .class-header-new{
+       padding: 7px 50px; 
+   
+   }
+   nav .navbar{
+    display:none;
+   }
+
+   /* container 6 */
+   .container6{
+    padding: 30px;
+   }
+   .toWPP a{
+    width:240px;
+    padding: 02px;
+    font-size: 8px;
+    margin: auto;
+}
+.flechaPequena{
+    width:15px;
+}
+}
+@media(max-width:420px){
+    /* header */
+   .menu{
+    margin-right:-20% ;
+   }
+   .logo{
+       width:150px;
+       margin-left: -110%;
+   }
+   .class-header-new{
+       padding: 7px 150px; 
+   
+   }
+   /* container 1 */
+   .tittle h1{
+    width:100%;
+   }
+}
+@media(max-width:400px){
+    /* header */
+    header{
+       display: flex;
+       flex-direction: row;
+      
+      gap: 120%;
+   }
+   .logo{
+       margin-left:-150%;
+       width:150px;
+   }
+   .class-header-new{
+       padding: 7px 150px; 
+   
+   }
+   /* container 1 */
+   .tittle h1{
+    width: 100%;
+   }
+
+
+/* container 4 */
+
+.info{
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+.container4Content{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    text-align: center;
+    margin: auto;
+   
+    gap: 15px;
+}
+.copyContainer4{
+    width:100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color:var(--branco);
+    margin:auto;
+}
+}
+
+@media(max-width:380px){
+    /* header */
+
+    .logo{
+       margin-left: -180%;
+    }
+    .menu{
+        margin-right: -100%;
+    }
+    .class-header-new{
+        padding: 7px 0px; 
+    
+    }
+}
+@media(max-width:360px){
+    /* header */
+
+    .logo{
+       margin-left: -220%;
+    }
+    .menu{
+        margin-left: 70%;
+    }
+    .class-header-new{
+        padding: 7px 0px; 
+    
+    }
+}
+@media(max-width:350px){
+    /* header */
+
+    .logo{
+       margin-left: -290%;
+    }
+    .menu{
+        margin-left: 70%;
+    }
+    .class-header-new{
+        padding: 7px 0px; 
+    
+    }
+}
+@media(max-width:340px){
+    /* header */
+
+    .logo{
+       margin-left: -350%;
+    }
+    .menu{
+        margin-left: 200%;
+    }
+    .class-header-new{
+        padding: 7px 0px; 
+    
     }
 }
