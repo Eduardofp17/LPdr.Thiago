@@ -85,3 +85,32 @@ window.addEventListener("scroll", ()=>{
         contato.classList.add('contactSec')
     }
 })    
+
+const menu= document.querySelector('.menu');
+const traco1=document.querySelector(".traco-1");
+const traco2=document.querySelector(".traco-2");
+const traco3=document.querySelector(".traco-3");
+const listaMenu = document.querySelector('.nav-MenuMobile');
+let menuAberto=false;
+
+if(menuAberto == false){
+    menu.addEventListener('click',AcaoMenu);
+
+}
+
+function AcaoMenu(){
+    menuAberto=true;
+    traco1.classList.toggle('traco-1Active');
+    traco2.classList.toggle('traco-2Active');
+    traco3.classList.toggle('traco-3Active');
+    listaMenu.classList.toggle('active');
+
+
+};
+
+function sumir(){
+    traco1.classList.remove('traco-1Active');
+    traco2.classList.remove('traco-2Active');
+    traco3.classList.remove('traco-3Active');
+    listaMenu.classList.remove('active');
+}
