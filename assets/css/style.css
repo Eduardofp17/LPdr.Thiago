@@ -297,6 +297,9 @@ body{
     text-align: left;
     
 }
+.arrowBack{
+    display: none;
+}
 .texts span{
     font-weight: 800;
 }
@@ -842,6 +845,7 @@ body{
     line-height: 22px;
 }
 @media (max-width:1100px){
+    /* header */
     header{
         display: flex;
         flex-direction: row;
@@ -854,26 +858,26 @@ body{
        display: flex;
        flex-direction: column;
        margin-right: -15%;
+       transition: 0.5s;
     }
     
     .traco-1Active{
         width:30px;
         transform: rotate(-45deg) translate(-5px) ;
-        transition: 1s;
+        transition: 0.5s;
     }
     .traco-2Active{
         width:30px;
         transform: rotate(45deg) translate(-5px);
-        transition: 1s;
+        transition: 0.5s;
     } 
     .traco-3Active{
 
         opacity: 0;
-        transition: 1s;
+        transition: 0.5s;
     }
     .nav-MenuMobile{
        background-color: var(--azul);
-        width: 100vw;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -883,13 +887,13 @@ body{
         text-align: center;
         padding: 40px;
         transform: translate(200%);
-        transition: 1s;
+        transition: 0.5s;
     }
   
     .active{
         transform: translate(0);
        margin: auto;
-       transition: 1s;
+       transition: 0.5s;
     }
     nav{
         display:none;
@@ -910,26 +914,35 @@ body{
         border-radius: 50px;
         transition: 0.5s all;
     }
+
+    /* container1 */
     .tittle h1{
         font-size: 25px;
+        line-height: 25px;
     }
     .texts{
         font-size: 13px;
+        line-height: 15px;
     }
     .ThiagoSuit{
         width:290px;
     }
     .cta{
-        padding: 15px;
+        padding: 10px 24px;
          border:none;
         border-radius:50px;
         font-weight: 700;
         font-size: 15px;
-        line-height: 27px;
+      
         width: 300px;
+        text-align: center;
+        align-items: center;
     }
     .cta-new{
         border:1px solid var(--dourado);
+    }
+    .arrowBack{
+        display: none;
     }
     
     #logoWhats{
@@ -939,8 +952,8 @@ body{
         border-radius:30px ;
         width:50px;
         position: fixed;
-        left:93.2%;
-        top:92%;
+        left:90%;
+        top:90%;
         animation: float 3s ease-in-out infinite;
         border: none;
     }
@@ -993,21 +1006,21 @@ body{
         width:250px;
     }
     .cta{
-        padding: 15px;
+        padding: 10px 30px;
          border:none;
         border-radius:50px;
         font-weight: 700;
         font-size: 12px;
-        line-height: 20px;
         width: 280px;
+        text-align: center;
     }
     .cta-new{
         border:1px solid var(--dourado);
     }
     #logoWhats{
         position: fixed;
-        left:92%;
-        top:92%;
+        left:87%;
+        top:88%;
     }
     .arrowBack{
         position: fixed;
@@ -1055,8 +1068,9 @@ body{
         align-items: center;
     }
     .cta{
-        padding: 5px;
-         border:none;
+        
+        padding: 10px 15px;
+        border:none;
         border-radius:50px;
         font-weight: 900;
         font-size: 10px;
@@ -1147,8 +1161,11 @@ body{
     .competencias{
         gap:20px;
     }
+    .cards{
+        width:95%;
+    }
     .cards:hover{
-        width:220px;
+        width:100%;
         transition: 800ms;
         padding: 30px;
     }
@@ -1264,8 +1281,8 @@ body{
     
       #logoWhats{
        position: fixed;
-       left:89%;
-       top:92%;
+       left:85%;
+       top:87%;
       }
       .arrowBack{
        position: fixed;
@@ -1308,12 +1325,17 @@ body{
         margin-left: -80%;
     }
     /* container1 */
+    .container1{
+        gap:20px;
+    }
     .tittle h1{
         width: 60%;
         font-size: 13px;
+        line-height: 15px;
     }
     .texts{
         font-size: 11px;
+        line-height: 12px;
     }
     .ThiagoSuit{
         width: 180px;
@@ -1341,7 +1363,7 @@ body{
         font-size: 18px;
     }
     .cards{
-        width:160px;
+        width:95%;
        
         height: 250px;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -1349,6 +1371,7 @@ body{
         padding: 20px;
         font-size: 12px;
     }
+
     /* container 4 */
     .info{
         margin:auto;
@@ -1416,8 +1439,8 @@ body{
 }
 #logoWhats{
  position: fixed;
- left:86%;
- top:92%;
+ left:82%;
+ top:87%;
 }
 .arrowBack{
  position: fixed;
@@ -1463,7 +1486,14 @@ body{
    .tittle h1{
     width: 100%;
    }
-
+   .cards{
+    width:250px;
+}
+    .cards:hover{
+   
+    transition: 800ms;
+    padding: 30px;
+}
 
 /* container 4 */
 
@@ -1536,7 +1566,7 @@ body{
     #logoWhats{
         width: 40px;
         position: fixed;
-        left:84%;
+        left:81%;
         top:92%;
        }
        #arrow{
@@ -1570,7 +1600,7 @@ body{
 
     .logo{
         width: 150px;
-       margin-left: -500%;
+        margin-right: 100%;
     }
     .menu{
         margin-left: -250%;
@@ -1582,14 +1612,11 @@ body{
 }
 @media(max-width:320px){
     /* header */
-
     .logo{
-        width: 150px;
-       margin-left: -800%;
+        width:150px;
+       
     }
-    .menu{
-        margin-left: -250%;
-    }
+
     .class-header-new{
         padding: 7px 0px; 
     
